@@ -7,7 +7,13 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="style" href="style.css">
     <script type='text/javascript'>
-        
+        function toggleView(elementid){
+            if (document.getElementById(elementid).style.display == 'none'){
+                document.getElementById(elementid).style.display = '';
+            } else {
+                document.getElementById(elementid).style.display = 'none';
+            }
+        }
     </script>
  </head>
  
@@ -29,14 +35,14 @@
         <div class="row">
             <div id="body-left" class="col-9">
                 <div id="recipe1" class="recipe-display">
-                <h4 style="color:#D64760" -center">Arroz con Leche</h4>
+                <h4 style="color:#D64760">Arroz con Leche</h4>
                     <img border="2" alt="Arroz con Leche" 
                     src="https://d1alt1wkdk73qo.cloudfront.net/images/guide/337cf984f47f4783b7b6208aa5a0137a/640x478_ac.jpg" 
                     width="25%" height="25%">
                     <div class="recipe">
                           <br>
-                          <h5 style="color:#D64760">Ingredients </h5>
-                            <form action="/action_page.php" method="get">
+                          <h5 style="color:#D64760" onClick="javascript:toggleView('arroz_ingredients')">Ingredients </h5>
+                            <form id="arroz_ingredients" action="/action_page.php" method="get" style="display:none">
                             <input type="checkbox" name="ingredient" > 4 cups water<br>
                             <input type="checkbox" name="ingredient" > 2 cups rice<br>
                             <input type="checkbox" name="ingredient" > 2 stick cinnamon<br>
