@@ -1,12 +1,22 @@
 <!DOCTYPE html>
+
+
 <html>
  <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="style" href="style.css">
     <script type='text/javascript'>
-        
+        function toggleView(elementid){
+            if (document.getElementById(elementid).style.display == 'none'){
+                document.getElementById(elementid).style.display = '';
+            } else {
+                document.getElementById(elementid).style.display = 'none';
+            }
+        }
     </script>
  </head>
+ 
  <body>
     <nav id='header-bar' class="navbar navbar-expand-lg navbar-light bg-light" >
         <a style="color:#E4854C" class="navbar-brand" href="index.html">Home</a>
@@ -20,17 +30,27 @@
     <br><br>
     </div>
     
+<<<<<<< HEAD
     
+=======
+     
+>>>>>>> 8d9af40fc2218ed80ba6d502600ca8f857899a75
     <div id='body-grid' class="container-fluid">
         <div class="row">
             <div id="body-left" class="col-9">
                 <div id="recipe1" class="recipe-display">
+<<<<<<< HEAD
                 <h4 style="color:#D64760"> Brazilian Feijoda</h4>
                     <img border="2" alt="Brazilian Feijoda" 
+=======
+                <h4 style="color:#D64760">Brazilian Feijoada</h4>
+                    <img border="2" alt="Brazilian Feijoada" 
+>>>>>>> 8d9af40fc2218ed80ba6d502600ca8f857899a75
                     src="https://tse3.mm.bing.net/th?id=OIP.Z_SU9GxmHhn4Iw0w1A4vhwHaE6&pid=Api" 
                     width="25%" height="25%">
                     <div class="recipe">
                           <br>
+<<<<<<< HEAD
                           
                           <h5 style="color:#D64760" onClick="javascript:toggleView('feijoda_ingredients')">Ingredients<img border="0" alt="arrow" 
                           src=" http://www.emoji.co.uk/files/phantom-open-emojis/symbols-phantom/13074-down-pointing-small-red-triangle.png"
@@ -41,6 +61,15 @@
                             <input type="checkbox" name="ingredient" > 1 (1-pound) boneless pork shoulder (Boston butt), trimmed and cut into 1/2-inch cubes <br>
                             <input type="checkbox" name="ingredient" > 3/4 teaspoon salt<br>
                             <input type="checkbox" name="ingredient" > 1/2 teaspoon freshly ground black pepper<br>
+=======
+                          <h5 style="color:#D64760" onClick="javascript:toggleView('feijoada_ingredients')">Ingredients </h5>
+                            <form id="feijoada_ingredients" action="/action_page.php" method="get" style="display:none">
+                            <input type="checkbox" name="ingredient" > 2 cups dried black beans<br>
+                            <input type="checkbox" name="ingredient" > 4 applewood-smoked bacon slices<br>
+                            <input type="checkbox" name="ingredient" > 1 (1-pound) boneless pork shoulder (Boston butt), trimmed and cut into 1/2-inch cubes<br>
+                            <input type="checkbox" name="ingredient" > 3/4 teaspoon salt, divided<br>
+                            <input type="checkbox" name="ingredient" > 1/2 teaspoon freshly ground black pepper, divided<br>
+>>>>>>> 8d9af40fc2218ed80ba6d502600ca8f857899a75
                             <input type="checkbox" name="ingredient" > 3 bone-in beef short ribs, trimmed (about 2 pounds)<br>
                             <input type="checkbox" name="ingredient" > 3 cups finely chopped onion (about 2 medium)<br>
                             <input type="checkbox" name="ingredient" > 1 1/4 cups fat-free, lower-sodium chicken broth<br>
@@ -48,10 +77,15 @@
                             <input type="checkbox" name="ingredient" > 1 (9-ounce) smoked ham hock<br>
                             <input type="checkbox" name="ingredient" > 1 tablespoon white vinegar<br>
                             <input type="checkbox" name="ingredient" > 8 orange wedges<br>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d9af40fc2218ed80ba6d502600ca8f857899a75
                            
                             </form>
                             <br><br>
                             
+<<<<<<< HEAD
                           <h5 style="color:#D64760">Directions</h5>
                               <ol>
                                   <li> Place black beans in a small saucepan; cover with cold water.
@@ -70,27 +104,86 @@
                                   shred meat with 2 forks. Discard bones. Discard ham hock. Return beef to slow cooker.
                                   Stir in vinegar and crumbled bacon. Serve with orange wedges. </li>
                              
+=======
+                          <h5 style="color:#D64760" onClick="javascript:toggleView('feijoada_directions')">Directions</h5>
+                              <ol id="feijoada_directions", style="display:none">
+                                  <li> Place black beans in a small saucepan; cover with cold water. Bring to a boil; cook beans for 2 minutes. 
+                                  Remove from heat; cover and let stand 1 hour. Drain beans.</li>
+                                  <li> Cook bacon in a large skillet over medium heat until crisp. 
+                                  Remove bacon from pan; crumble. Sprinkle pork evenly with 1/8 teaspoon salt and 1/4 teaspoon pepper. 
+                                  Increase heat to medium-high. Add pork to drippings in skillet; sauté 8 minutes, turning to brown on all sides. 
+                                  Transfer pork to a 6-quart electric slow cooker. Sprinkle ribs evenly with 1/8 teaspoon salt and remaining 1/4 teaspoon pepper. 
+                                  Add ribs to skillet; cook 3 minutes on each side or until browned. Place ribs in slow cooker. Add drained beans, remaining 1/2 teaspoon salt, onion, 
+                                  and next 3 ingredients (through ham hock) to slow cooker, stirring to combine. 
+                                  Cover and cook on LOW 8 hours or until beans and meat are tender.</li>
+                                  <li>Remove ribs from slow cooker; let stand 15 minutes. Remove meat from bones; shred meat with 2 forks. Discard bones. Discard ham hock. Return beef to 
+                                  slow cooker. Stir in vinegar and crumbled bacon. Serve with orange wedges.</li>
+>>>>>>> 8d9af40fc2218ed80ba6d502600ca8f857899a75
                               </ol>
 
                     </div>
                     </a>
                 </div>
+                
                 <div id="recipe2" class="recipe-display">
-                    <img src="grapes.jpg" alt="Lights" style="width:100%">
+                <h4 style="color:#D64760" class="text-left">Korean Fried Cauliflower</h4>
+                    <img border="2" alt="Korean Fried Cauliflower" 
+                    src="https://www.thecheesecakefactory.com/assets/images/Menu-Import/CCF_Social_KoreanFriedCauliflower.jpg" 
+                    width="25%" height="25%">
                     <div class="recipe">
-                          <p>Lorem ipsum...</p>
+                       <br>
+                       <h5 style="color:#D64760" onClick="javascript:toggleView('cauliflower_ingredients')">Ingredients</h5>
+                        <form id="cauliflower_ingredients" action="/action_page.php" method="get" style="display:none">
+                            <input type="checkbox" name="ingredient" >2 cups Cauliflower Florets, cut into 3/4” to 1” pieces
+                            <input type="checkbox" name="ingredient" >4 tsps. Rice Flour<br>
+                            <input type="checkbox" name="ingredient" >1/8 tsp. Baking Powder<br>
+                            <input type="checkbox" name="ingredient" >1/8 tsp. Coarse Salt<br>
+                            <input type="checkbox" name="ingredient" >Pinch Black Pepper, ground<br>
+                            <input type="checkbox" name="ingredient" >1/2 cup Rice Flour Batter*<br>
+                            <input type="checkbox" name="ingredient" >1/2 cup Korean Chile Sauce<br>
+                            <input type="checkbox" name="ingredient" >1/2 tsp. Green Onions, sliced 1/8”<br>
+                            <input type="checkbox" name="ingredient" >1/8 tsp. Lime zest, minced<br>
+                            <input type="checkbox" name="ingredient" >1/8 tsp. Black/White Sesame Seeds<br>
+                            <input type="checkbox" name="ingredient" >1 wedge Lime, wedge<br>
+                            <input type="checkbox" name="ingredient" >2 fz. Ranch Dressing*<br>
+                            </form>
+                            <br><br>
+                        
+                          <h5 style="color:#D64760" onClick="javascript:toggleView('cauliflower_directions')">Directions</h5>
+                          <div id="cauliflower_directions" style="display:none">
+                              <h6>Pudding:</h6>
+                              <ol>
+                                  <li> Place the cauliflower pieces, rice flour, baking powder, salt and pepper (pinch) into a small mixing bowl and toss to incorporate. 
+                                  Do not discard any excess flour.</li>
+                                  <li> Ladle the rice flour batter into the bowl and fold to incorporate. </li>
+                                  <li> Fry the cauliflower pieces at 350 degrees until golden brown and crispy (approx. 4 mins.). 
+                                  Drain over the fryer and transfer to a plate lined with paper towels. </li>
+                                  <li> Heat the Korean chile sauce in a non-stick sauté pan set over medium heat and bring to a simmer. </li>
+                                  <li> Add the cauliflower into the pan, tossing to incorporate. </li>
+                                  <li> Mound the cauliflower into a bowl. </li>
+                                  <li> Sprinkle the green onion, lime zest and sesame seeds evenly over the cauliflower</li>
+                                  <li> Sprinkle the lime zest evenly over the cauliflower. </li>
+                                  <li> Ladle the ranch dressing into a small dish and serve on the side with the lime wedge.</li>
+                              </ol>
+                              <h6>Syrup:</h6>
+                              <ol>
+                                  <li> Melt the butter in a pot over the fire, then stir in all the other ingredients. </li>
+                                  <li> Heat through, but don’t boil.</li>
+                                  <li> Pour slowly over the pudding, allowing it soak in thoroughly. </li>
+                              </ol>
+                          </div>
                     </div>
                     </a>
                 </div>
             </div>
             <div id="body-bar-right" class="col-3">
-                <h6 class="text-center">Page Content</h6>
+                <h6 style="color:#D64760" class="text-center">Categories</h6>
                 <ul>
-                    <li>
-                       <a href="#recipe1">Recipe 1</a> 
+                    <li style="color:#D64760" >
+                       <a style="color:#E4854C"  href="#recipe1">Brazilian</a> 
                     </li>
-                    <li>
-                       <a href="#recipe2">Recipe 2</a>
+                    <li style="color:#D64760">
+                       <a style="color:#E4854C"  href="#recipe2">Korean</a>
                     </li>
                 </ul>
             </div>

@@ -59,8 +59,8 @@
                             </form>
                             <br><br>
                             
-                          <h5 style="color:#D64760">Directions</h5>
-                              <ol>
+                          <h5 style="color:#D64760" onClick="javascript:toggleView('arroz_directions')">Directions</h5>
+                              <ol id="arroz_directions", style="display:none">
                                   <li> Put the water, rice, and cinnamon stick in a medium-size heavy saucepan set over medium-high heat.</li>
                                   <li> Bring to a boil, uncovered, and cook until the rice is tender, about 18 minutes.</li>
                                   <li> Strain out the liquid, discard the cinnamon and reserve the rice.</li>
@@ -76,16 +76,22 @@
                 </div>
                 
                 <div id="recipe2" class="recipe-display">
-                <h4 style="color:#D64760" class="text-center">Malva Pudding</h4>
+                <h4 style="color:#D64760" class="text-left">Malva Pudding</h4>
                     <img border="2" alt="Malva Pudding" 
                     src="https://tse2.mm.bing.net/th?id=OIP.8erQEe1F9vqjl-LqjOrjVgHaLG&pid=Api" 
                     width="25%" height="25%">
                     <div class="recipe">
+<<<<<<< HEAD
                         <br>
                         <h5 style="color:#D64760" onClick="javascript:toggleView('pudding_ingredients')">Ingredients<img border="0" alt="Arroz con Leche" 
                           src=" http://www.emoji.co.uk/files/phantom-open-emojis/symbols-phantom/13074-down-pointing-small-red-triangle.png"
                           width="2%" height="2%"></h5>
                         <form id="pudding_ingredients" action="/action_page.php" method="get" style="display:none">
+=======
+                       <br>
+                       <h5 style="color:#D64760" onClick="javascript:toggleView('malva_ingredients')">Ingredients</h5>
+                        <form id="malva_ingredients" action="/action_page.php" method="get" style="display:none">
+>>>>>>> 8d9af40fc2218ed80ba6d502600ca8f857899a75
                             <h6>Pudding:</h6>
                             <input type="checkbox" name="ingredient" > 1/2 cup white sugar <br>
                             <input type="checkbox" name="ingredient" > 1 egg <br>
@@ -105,8 +111,9 @@
                             </form>
                             <br><br>
                         
-                          <h5 style="color:#D64760">Directions</h5>
-                          <h6>Pudding:</h6>
+                          <h5 style="color:#D64760" onClick="javascript:toggleView('malva_directions')">Directions</h5>
+                          <div id="malva_directions" style="display:none">
+                              <h6>Pudding:</h6>
                               <ol>
                                   <li> With a wire whisk or egg beater beat together the sugar and eggs. 
                                   You want the mixture to creamy and pale, so be patient and strong and beat it for as 
@@ -118,12 +125,13 @@
                                   <li> Bake for about an hour, until golden brown and a sharp knife or skewer 
                                   inserted in the middle comes out clean.</li>
                               </ol>
-                          <h6>Syrup:</h6>
+                              <h6>Syrup:</h6>
                               <ol>
                                   <li> Melt the butter in a pot over the fire, then stir in all the other ingredients. </li>
                                   <li> Heat through, but don’t boil.</li>
                                   <li> Pour slowly over the pudding, allowing it soak in thoroughly. </li>
                               </ol>
+                          </div>
                     </div>
                     </a>
                 </div>
