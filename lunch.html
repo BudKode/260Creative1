@@ -1,12 +1,22 @@
 <!DOCTYPE html>
+
+
 <html>
  <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="style" href="style.css">
     <script type='text/javascript'>
-        
+        function toggleView(elementid){
+            if (document.getElementById(elementid).style.display == 'none'){
+                document.getElementById(elementid).style.display = '';
+            } else {
+                document.getElementById(elementid).style.display = 'none';
+            }
+        }
     </script>
  </head>
+ 
  <body>
     <nav id='header-bar' class="navbar navbar-expand-lg navbar-light bg-light" >
         <a style="color:#E4854C" class="navbar-brand" href="index.html">Home</a>
@@ -14,37 +24,120 @@
         <a style="color:#E4854C" class="nav-item" href="lunch.html">Lunch</a>
         <a style="color:#E4854C" class="nav-item" href="dinner.html">Dinner</a>
     </nav>
+    
     <div id='welcome-section' class='container-fluid' onClick="my_name()">
-        
-        <h1 style="color:#E4854C"><center>Lunches</center></h1>
+    <h1 style="color:#E4854C"><center>Lunch</center></h1>
+    <br><br>
     </div>
+    
+     
     <div id='body-grid' class="container-fluid">
         <div class="row">
             <div id="body-left" class="col-9">
-                <h6 class="text-center">Recipes</h6>
                 <div id="recipe1" class="recipe-display">
-                    <img src="grapes.jpg" alt="Lights" style="width:100%">
+                <h4 style="color:#D64760">Chicken Basquaise</h4>
+                    <img border="2" alt="Chicken Basque" 
+                    src="https://tse1.mm.bing.net/th?id=OIP.AXl03hyLC519crV-om4e5AHaE6&pid=Api" 
+                    width="25%" height="25%">
                     <div class="recipe">
-                          <p>Lorem ipsum...</p>
+                          <br>
+                          <h5 style="color:#D64760" onClick="javascript:toggleView('chicken_ingredients')">Ingredients </h5>
+                            <form id="chicken_ingredients" action="/action_page.php" method="get" style="display:none">
+                            <input type="checkbox" name="ingredient" > 3 tbsp. extra-virgin olive oil<br>
+                            <input type="checkbox" name="ingredient" > 4 small fresh chorizo sausages<br>
+                            <input type="checkbox" name="ingredient" > 4 skin-on, boneless chicken breasts (about 8 oz. each), halved crosswise<br>
+                            <input type="checkbox" name="ingredient" > Kosher salt and freshly ground pepper<br>
+                            <input type="checkbox" name="ingredient" > 6 sprigs thyme<br>
+                            <input type="checkbox" name="ingredient" > 2 large garlic cloves, lightly crushed<br>
+                            <input type="checkbox" name="ingredient" > 1 bay leaf<br>
+                            <input type="checkbox" name="ingredient" > 1 yellow onion, halved and thinly sliced (2 cups)<br>
+                            <input type="checkbox" name="ingredient" > 1 shallot, halved lengthwise and thinly sliced (1/3 cup)<br>
+                            <input type="checkbox" name="ingredient" > 1 tomato, diced (3/4 cup)<br>
+                            <input type="checkbox" name="ingredient" > 2 tbsp. tomato paste<br>
+                            <input type="checkbox" name="ingredient" > 1 cup chicken stock<br>
+                            <input type="checkbox" name="ingredient" > 1 1/2 cups dry white wine<br>
+                            <input type="checkbox" name="ingredient" > 10 jarred piquillo peppers, drained and halved lengthwise<br>
+                            <input type="checkbox" name="ingredient" > 12 boiled small new potatoes (1 1/2 lb.)<br>
+                            <input type="checkbox" name="ingredient" > 1/4 cup green apple, finely diced, for garnish<br>
+                            <input type="checkbox" name="ingredient" > 2 tbsp. chopped flat-leaf parsley, for garnish<br>
+                            <input type="checkbox" name="ingredient" > 2 tsp. piment d'Espelette (ground Espelette pepper) or paprika<br>
+                           
+                            </form>
+                            <br><br>
+                            
+                          <h5 style="color:#D64760" onClick="javascript:toggleView('chicken_directions')">Directions</h5>
+                              <ol id="chicken_directions", style="display:none">
+                                  <li> Simply Make the Chicken Basque.</li>
+                              </ol>
+
                     </div>
                     </a>
                 </div>
+                
                 <div id="recipe2" class="recipe-display">
-                    <img src="grapes.jpg" alt="Lights" style="width:100%">
+                <h4 style="color:#D64760" class="text-left">Chicken Khao Soi </h4>
+                    <img border="2" alt="Chicken Khao Soi" 
+                    src="https://media.blueapron.com/recipes/1390/c_main_dish_images/20151008-1913-58-7740/2P_093015_3_ChickenKhaoSoiSoup_20-_206435_splash_feature.jpg" 
+                    width="25%" height="25%">
                     <div class="recipe">
-                          <p>Lorem ipsum...</p>
+                       <br>
+                       <h5 style="color:#D64760" onClick="javascript:toggleView('khao_ingredients')">Ingredients</h5>
+                        <form id="khao_ingredients" action="/action_page.php" method="get" style="display:none">
+                            <h6>Khao Soi Paste:</h6>
+                            <input type="checkbox" name="ingredient" > 4 large dried New Mexico or guajillo chiles, stemmed, halved, seeded<br>
+                            <input type="checkbox" name="ingredient" > 2 medium shallots, halved<br>
+                            <input type="checkbox" name="ingredient" > 8 garlic cloves<br>
+                            <input type="checkbox" name="ingredient" > 1 2" piece ginger, peeled, sliced<br>
+                            <input type="checkbox" name="ingredient" > 1/4 cup chopped cilantro stems<br>
+                            <input type="checkbox" name="ingredient" > 1 tablespoon ground coriander<br>
+                            <input type="checkbox" name="ingredient" > 1 tablespoon ground turmeric<br>
+                            <input type="checkbox" name="ingredient" > 1 teaspoon curry powder<br>
+
+                            <h6>Soup:</h6>
+                            <input type="checkbox" name="ingredient" > 2 tablespoons vegetable oil<br>
+                            <input type="checkbox" name="ingredient" > 2 14-oz. cans unsweetened coconut milk<br>
+                            <input type="checkbox" name="ingredient" > 2 cups low-sodium chicken broth<br>
+                            <input type="checkbox" name="ingredient" > 1 1/2 lb skinless, boneless chicken thighs, halved lengthwise<br>
+                            <input type="checkbox" name="ingredient" > 1 lb Chinese egg noodles<br>
+                            <input type="checkbox" name="ingredient" > 3 tablespoons (or more) fish sauce (such as nam pla or nuoc nam)<br>
+                            <input type="checkbox" name="ingredient" > 1 tablespoon (packed) palm sugar or light brown sugar<br>
+                            <input type="checkbox" name="ingredient" > Kosher salt<br>
+                            <input type="checkbox" name="ingredient" > Sliced red onion, bean sprouts, cilantro sprigs, crispy fried onions or shallots, chili oil, and lime wedges (for serving)<br>
+                            
+                            </form>
+                            <br><br>
+                        
+                          <h5 style="color:#D64760" onClick="javascript:toggleView('khao_directions')">Directions</h5>
+                          <div id="khao_directions" style="display:none">
+                              <h6>Khao Soi Paste:</h6>
+                              <ol>
+                                  <li> Place chiles in a small heatproof bowl, add boiling water to cover, and let soak until softened, 25–30 minutes.</li>
+                                  <li> Drain chiles, reserving soaking liquid. Purée chiles, shallots, garlic, ginger, cilantro stems, coriander, turmeric, 
+                                  curry powder, and 2 Tbsp. soaking liquid in a food processor, 
+                                  adding more soaking liquid by tablespoonfuls, if needed, until smooth.</li>
+                              </ol>
+                              <h6>Soup:</h6>
+                              <ol>
+                                  <li> Heat oil in a large heavy pot over medium heat. Add khao soi paste; cook, stirring constantly, until slightly darkened, 
+                                  4–6 minutes. Add coconut milk and broth. Bring to a boil; add chicken. Reduce heat and simmer until chicken is fork-tender, 
+                                  20–25 minutes. Transfer chicken to a plate. Let cool slightly; shred meat. </li>
+                                  <li> Meanwhile, cook noodles according to package directions.</li>
+                                  <li> Add chicken, 3 Tbsp. fish sauce, and sugar to soup. Season with salt or more fish sauce, if needed. Divide soup and 
+                                  noodles among bowls and serve with toppings. </li>
+                              </ol>
+                          </div>
                     </div>
                     </a>
                 </div>
             </div>
             <div id="body-bar-right" class="col-3">
-                <h6 class="text-center">Page Content</h6>
+                <h6 style="color:#D64760" class="text-center">Categories</h6>
                 <ul>
-                    <li>
-                       <a href="#recipe1">Recipe 1</a> 
+                    <li style="color:#D64760" >
+                       <a style="color:#E4854C"  href="#recipe1">Europe</a> 
                     </li>
-                    <li>
-                       <a href="#recipe2">Recipe 2</a>
+                    <li style="color:#D64760">
+                       <a style="color:#E4854C"  href="#recipe2">Asia</a>
                     </li>
                 </ul>
             </div>
