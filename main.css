@@ -2,18 +2,29 @@
     padding-left: 100px;
 }
 
-h1, h2 {
+ h2, h6 {
     padding-bottom: 20px;
+    color:#E4854C;
 }
+
+h1 {
+    color:white;
+    background-color:#E4854C;
+}
+
+
 
 #contact-link {
     float: left;
 }
 
 #welcome-section {
-    background-color:#A4CEF7;  /*#353DB2*/
+    background-color:#E4854C;  /*#353DB2*/
     padding-top: 50px;
     padding-bottom: 50px;
+    background-image: url("http://45045v19v1cp13m0qd2upcmm.wpengine.netdna-cdn.com/wp-content/uploads/2014/03/whole_foods1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .row {
